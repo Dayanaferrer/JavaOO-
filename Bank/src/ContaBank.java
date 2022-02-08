@@ -14,9 +14,7 @@ public class ContaBank {
 		System.out.println("Tipo" + this.getTipo());
 		System.out.println("Dono" + this.getDono());
 		System.out.println("Saldo" + this.getSaldo());
-		System.out.println("Conta" + this.getStatus());
-		
-		
+		System.out.println("Conta" + this.getStatus());				
 	}
 	
 	//Métodos Personalizados
@@ -113,7 +111,5 @@ public class ContaBank {
 	}
 	public void setStatus(boolean status) {
 		this.status = status;
-	}
-	
-	
+	}		
 }
