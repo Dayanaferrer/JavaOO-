@@ -9,7 +9,7 @@ public class ContaBank {
 	
 	//Métodos Personalizados
 	public void estadoAtualConta() {
-		System.out.println("===============================";
+		System.out.println("===============================");
 		System.out.println("Conta" + this.getNumConta());
 		System.out.println("Tipo" + this.getTipo());
 		System.out.println("Dono" + this.getDono());
