@@ -9,16 +9,16 @@ public class ContaBank {
 	
 	//Métodos Personalizados
 	public void estadoAtualConta() {
-		System.out.println("===============================");
-		System.out.println("Conta" + this.getNumConta());
-		System.out.println("Tipo" + this.getTipo());
-		System.out.println("Dono" + this.getDono());
-		System.out.println("Saldo" + this.getSaldo());
-		System.out.println("Conta" + this.getStatus());				
+		System.out.println("======================================");
+		System.out.println("Conta: " + this.getNumConta());
+		System.out.println("Tipo - " + this.getTipo());
+		System.out.println("Dono - " + this.getDono());
+		System.out.println("Saldo: " + this.getSaldo());
+		System.out.println("Conta aberta ou fechada (True ou False): " + this.getStatus());				
 	}
 	
 	//Métodos Personalizados
-	public void abrirConta(string t) {
+	public void abrirConta(String t) {
 		this.setTipo(t);
 		this.setStatus(true);
 		if ("ContaCorrente".equals(t)) {
@@ -69,7 +69,7 @@ public class ContaBank {
 		}else if (this.getTipo() == "ContaPoupança") {
 			v=20;
 		}
-		if (thi.getStatus()) {
+		if (this.getStatus()) {
 			this.setSaldo(this.getSaldo() - v);
 			System.out.println("Mensalidade paga com sucesso por" + this.getDono());
 		}else {
